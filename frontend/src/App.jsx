@@ -15,7 +15,9 @@ import {
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = import.meta.env.MODE === 'production' 
+  ? 'https://heartguard-analytics-1.onrender.com' 
+  : 'http://localhost:8000';
 
 /* Typewriter Effect Component for Chat */
 const TypewriterText = ({ text, delay = 15 }) => {
