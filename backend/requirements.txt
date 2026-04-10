@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+groq
+pydantic
+shap
+joblib
+fpdf
+scikit-learn
+pandas
+numpy
+matplotlib
+python-multipart
+python-dotenv
